@@ -102,7 +102,7 @@ std::pair<JSONobject, size_t> parse(std::string_view json){
         // list
         std::vector<JSONobject> res;
         size_t i;
-        for(int i = 1; i < json.size();){
+        for(i = 1; i < json.size();){
             if(json[i] == ']'){            
                 i += 1;
                 break;
